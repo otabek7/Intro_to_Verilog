@@ -6,7 +6,7 @@ module floprsen(input            clk,
 
   always @(posedge clk, reset, set)//updated and removed posedge from reset
     begin//added begin and end statement
-        if (reset)    q <= 0;
+        if (reset)    q <= 0; //tested if statement
         else          q <= d;
         
         if(set) q<=1;
